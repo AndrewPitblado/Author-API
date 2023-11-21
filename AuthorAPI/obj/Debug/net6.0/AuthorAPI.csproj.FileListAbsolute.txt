@@ -298,3 +298,9 @@ C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\System.Web.
 C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Azure.Data.AppConfiguration.dll
+C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Azure.Messaging.EventGrid.dll
+C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Azure.Security.KeyVault.Secrets.dll
+C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Microsoft.Azure.AppConfiguration.AspNetCore.dll
+C:\Users\PitblaAn\source\repos\Author-API\AuthorAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.AzureAppConfiguration.dll

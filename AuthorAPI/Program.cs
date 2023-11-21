@@ -10,6 +10,9 @@ using System.Diagnostics.Contracts;
 using System.Collections;
 using System.Text.Json.Nodes;
 using System.Data.SqlTypes;
+using System;
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 
 internal static class Program
 {
@@ -37,6 +40,11 @@ internal static class Program
             });
         });
 
+        //string keyVaultName = Environment.GetEnvironmentVariable("KEY_VAULT_NAME");
+
+        var kvUri = "https://auth-app-vault.vault.azure.net/";
+        var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
+        
 
 
 
@@ -68,10 +76,10 @@ internal static class Program
 
         //app.UseCors("AuthorOrigins");
         app.UseHttpsRedirection();
-
+        
 
         string connectionString = app.Configuration.GetConnectionString("DefaultConnection")!;
-
+        //var sqlConnString = client.GetSecret("mySecret1");
         try
         {
             using var conn = new SqlConnection(connectionString);
@@ -226,14 +234,15 @@ internal static class Program
             conn.Open();
 
             var command = new SqlCommand(
-                "INSERT INTO authors (au_id, au_lname, au_fname, phone, address, city, state, zip, contract) VALUES (@au_id, @au_lname, @au_fname, @phone, @add, @city, @state, @zip, @contract)",
+                "INSERT INTO authors (au_id, au_fname, au_lname, phone, address, city, state, zip, contract) VALUES (@au_id, @au_lname, @au_fname, @phone, @add, @city, @state, @zip, @contract)",
                 conn
                 );
             command.Parameters.Clear();
             command.Parameters.AddWithValue("@au_id", author.id);
+            command.Parameters.AddWithValue("@au_fname", author.firstName);
             command.Parameters.AddWithValue("@au_lname", author.lastName);
 
-            command.Parameters.AddWithValue("@au_fname", author.firstName);
+            
 
             command.Parameters.AddWithValue("@phone", author.phone);
 

@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "secrets2": {
+      "restored": true,
+      "restoreTime": "2023-11-21T18:12:14.8316739Z"
+    },
+    "appConfig1": {
+      "restored": true,
+      "restoreTime": "2023-11-17T23:42:48.0904364Z"
+    },
     "mssql1": {
       "restored": true,
       "restoreTime": "2023-10-13T21:51:55.006136Z"
@@ -15,10 +23,30 @@
       "Type": "subscription",
       "Value": "a96c6bcc-a906-4957-97b3-9bd6ea2a1c5f"
     },
+    "secrets2.resourceGroupName": {
+      "Name": "secrets2.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Vault"
+    },
+    "secrets2.subscriptionId": {
+      "Name": "secrets2.subscriptionId",
+      "Type": "subscription",
+      "Value": "a96c6bcc-a906-4957-97b3-9bd6ea2a1c5f"
+    },
+    "appConfig1.subscriptionId": {
+      "Name": "appConfig1.subscriptionId",
+      "Type": "subscription",
+      "Value": "a96c6bcc-a906-4957-97b3-9bd6ea2a1c5f"
+    },
     "mssql1.resourceGroupName": {
       "Name": "mssql1.resourceGroupName",
       "Type": "resourceGroup",
       "Value": "First-Group"
+    },
+    "appConfig1.resourceGroupName": {
+      "Name": "appConfig1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "first-group"
     }
   }
 }
